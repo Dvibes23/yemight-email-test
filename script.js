@@ -15,7 +15,7 @@ document.addEventListener("visibilitychange", function() {
 
 // Load questions from AWS Lambda
 async function loadQuestions() {
-    const response = await fetch('https://bdodxhw03j.execute-api.us-east-1.amazonaws.com/prod');
+    const response = await fetch('https://bdodxhw03j.execute-api.us-east-1.amazonaws.com/prod/questions');
     const questions = await response.json();
     const container = document.getElementById("question-container");
 
